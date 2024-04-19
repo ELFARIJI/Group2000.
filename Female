@@ -1,0 +1,21 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package classfication;
+
+/**
+ *
+ * @author D-LUCAS
+ */
+public class Female { 
+         void display()
+        {   System .out.print("-female properties:\n");
+            System .out.print("have breast :\n");
+            System .out.print("have longhair :\n");
+            System .out.print("have shape :\n");
+        }
+    
+                
+    
+}
