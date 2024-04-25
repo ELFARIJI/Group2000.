@@ -22,8 +22,9 @@ public class Conditional_statement {
         operation op = new operation();
         
         condition con = new condition();
-        
-        
+           int num;
+           char choice;
+        do{
        
        System.out.print("choose between 1,2,3,4,5\n"
                       + "1:add\n"
@@ -31,8 +32,7 @@ public class Conditional_statement {
                       + "3:mult\n"
                       + "4:div\n"
                       + "5:check if it is odd or even\n");
-       int num;
-       num=sc.nextInt();
+    num=sc.nextInt();
        switch(num){
             case 1:       
         System.out.print("Please enter number a\n");
@@ -65,16 +65,18 @@ public class Conditional_statement {
        op.b=sc.nextInt();
                 op.div();
                 break;  
-            case 5:
-                System.out.print("Enter the number to check\n");
+            default:
+            System.out.print("INVALID INPUT");
+        }
+        System.out.print("Enter the number to check\n");
                 con.num=sc.nextInt();
-                con.iseven();
-                break;
-            default:  
-             System.out.print("INVALID INPUT");   
-        }  
-        
-        // TODO code application logic here
-    }
+                con.display();
+System.out.print("Do you want to continue(Y/N)?");
+choice = sc.next().chaAt(0);  
+         
+    } while (choice=='Y'|| choice =='y');
+    system.out.println("Existing the programm....See you later!);
+    sc.close();
     
+}
 }
