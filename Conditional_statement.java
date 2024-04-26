@@ -22,8 +22,8 @@ public class Conditional_statement {
         operation op = new operation();
         
         condition con = new condition();
-        
-        
+    char ch;    
+        do {
        
        System.out.print("choose between 1,2,3,4,5\n"
                       + "1:add\n"
@@ -73,8 +73,14 @@ public class Conditional_statement {
             default:  
              System.out.print("INVALID INPUT");   
         }  
-        
+        System.out.print("\ndo you want to continue? YES or NO\n");
+       ch=sc.next().charAt(0);
+      
+       
         // TODO code application logic here
     }
+        while(ch=='Y'||ch=='y');
+        System.out.print("Exiting program. Thank you\n");
+        }
     
 }
